@@ -1,0 +1,272 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* logo style */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  /* Job, Companies, Services button style */
+  .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  /* login and register button style */
+  .login-btn .btn {
+    width: 100px;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    background-color: #f05537;
+  }
+  
+  .login-btn .btn:hover {
+    background-color: #d34e31;
+  }
+  
+  .register-btn .btn {
+    width: 100px;
+    background-color: #fff;
+    color: #f05537;
+    border: 2px solid #f05537;
+    font-weight: 600;
+  }
+  
+  .register-btn .btn:hover {
+    text-decoration: none;
+    outline: none;
+    background-color: #f05537;
+    color: #fff;
+  }
+  
+  /* login and for employer divider */
+  .divider-login {
+    color: lightgray;
+    font-size: 22px;
+  }
+  
+  /* For Employer dropdown style */
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  /* For Employers underline animation */
+  .hover-underline-animation {
+    display: inline;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #f05537;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  
+  
+  
+  /* Hero Section */
+  .hero {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .hero h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .job-search-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .job-search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .job-search-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Job Categories Section */
+  .job-categories {
+    background-image: url("job.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .job-categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-list li {
+    margin: 10px;
+  }
+  
+  .category-list li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Recent Jobs Section */
+  .recent-jobs {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+  }
+  
+  .recent-jobs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .job-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .job-list li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .job-list li h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .job-list li p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .view-more {
+    display: block;
+    text-align: center;
+}
