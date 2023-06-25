@@ -1,0 +1,16 @@
+.hiring {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+.hiring > a{
+    text-decoration: none;
+}
+.card-body > p{
+    color: lightgray;
+}
+.hiring_logo{
+    width: 50px;
+    height: 50px;
+}

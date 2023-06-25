@@ -1,0 +1,130 @@
+.search-1 {
+    position: relative;
+    width: 100%
+}
+
+.search-1 input {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 34px;
+    padding-right: 10px;
+    border-right: 2px solid #eee
+}
+
+.search-1 input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none
+}
+
+.search-1 i {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: 24px;
+    color: #eee
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+.search-2 {
+    position: relative;
+    width: 100%
+}
+
+.search-2 input {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 100px
+}
+
+.search-2 input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none
+}
+
+.search-2 i {
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    font-size: 24px;
+    color: #eee
+}
+
+.search-2 button {
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    border: none;
+    height: 45px;
+    background-color: #275df5;
+    color: #fff;
+    width: 130px;
+    border-radius: 20px;
+
+}
+
+.search-3 {
+    position: relative;
+    width: 100%;
+    
+}
+.search-3 i {
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    font-size: 24px;
+    color: #eee;
+}
+.search-3 select {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 100px;
+    color:black;
+    opacity: 0.5;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none;
+
+}
+.form-select .selected {
+    border-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  
+
+@media (max-width:800px) {
+    .search-1 input {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .search-2 i {
+        left: 4px;
+    }
+
+    .search-2 input {
+        padding-left: 34px;
+    }
+
+    .search-2 button {
+        height: 37px;
+        top: 5px;
+    }
+}
