@@ -148,7 +148,7 @@
     background-color: white;
     margin: 1%;
 }
-.btn{
+.col-sm .btn{
     display: flex;
     align-items: center;
     justify-content: center;
